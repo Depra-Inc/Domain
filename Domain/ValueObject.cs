@@ -116,7 +116,7 @@ namespace Depra.Domain
     public abstract class ValueObject<T> : ValueObject
     {
         public T Value { get; }
-
+        
         protected ValueObject(T value) => Value = value;
 
         protected override IEnumerable<object> GetEqualityComponents()

@@ -6,12 +6,16 @@ namespace Depra.Domain
     {
         private readonly List<IDomainEvent> _domainEvents;
 
-        public virtual IReadOnlyList<IDomainEvent> DomainEvents => _domainEvents;
+        protected AggregateRoot() => 
+            _domainEvents = new List<IDomainEvent>();
 
-        protected virtual void AddDomainEvent(IDomainEvent newEvent) => _domainEvents.Add(newEvent);
+        public virtual IReadOnlyList<IDomainEvent> DomainEvents => 
+            _domainEvents;
 
-        public virtual void ClearEvents() => _domainEvents.Clear();
+        protected virtual void AddDomainEvent(IDomainEvent newEvent) => 
+            _domainEvents.Add(newEvent);
 
-        protected AggregateRoot() => _domainEvents = new List<IDomainEvent>();
+        public virtual void ClearEvents() => 
+            _domainEvents.Clear();
     }
 }

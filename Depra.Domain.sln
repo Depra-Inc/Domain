@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.UnitTests", "Domain.UnitTests\Domain.UnitTests.csproj", "{75ACCD96-920C-449A-BA81-08FC8AC5B3C6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{90EB52D1-8539-4599-9895-741BFC8ACA8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1234A379-59F1-4818-A8B7-0F5D98DCC068} = {EDFB1280-B744-424F-82B8-8E553C3A846B}
+		{75ACCD96-920C-449A-BA81-08FC8AC5B3C6} = {90EB52D1-8539-4599-9895-741BFC8ACA8F}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1234A379-59F1-4818-A8B7-0F5D98DCC068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
